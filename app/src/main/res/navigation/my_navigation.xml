@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/dienthongtinFragment">
+
+    <fragment
+        android:id="@+id/dienthongtinFragment"
+        android:name="vn.edu.ntu.quangnghia.onthi1.DienthongtinFragment"
+        android:label="fragment_dienthongtin"
+        tools:layout="@layout/fragment_dienthongtin" >
+        <action
+            android:id="@+id/action_dienthongtinFragment_to_danhsachFragment"
+            app:destination="@id/danhsachFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/danhsachFragment"
+        android:name="vn.edu.ntu.quangnghia.onthi1.DanhsachFragment"
+        android:label="fragment_danhsach"
+        tools:layout="@layout/fragment_danhsach" />
+</navigation>
